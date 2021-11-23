@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <snippet group="C++" trigger="calculate_time" id="" complement="" removed="false" modified="false">auto t_start = std::chrono::high_resolution_clock::now();
+auto t_end = std::chrono::high_resolution_clock::now();
+double elapsed_time_ms = std::chrono::duration&lt;double, std::milli&gt;(t_end-t_start).count();</snippet>
+    <snippet group="C++" trigger="hello" id="" complement="" removed="false" modified="false">#include&lt;iostream&gt;
+ 
+int main(int argc, char *argv[]){
+   std::cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; std::endl;
+   return 0;
+}</snippet>
+    <snippet group="C++" trigger="my_calculate_time" id="" complement="" removed="false" modified="false">auto t_start = std::chrono::high_resolution_clock::now();
+auto t_end = std::chrono::high_resolution_clock::now();
+double elapsed_time_ms = std::chrono::duration&lt;double, std::milli&gt;(t_end-t_start).count();</snippet>
+    <snippet group="C++" trigger="my_calculate_time2" id="" complement="" removed="false" modified="false">#include &lt;cstdint&gt;
+#include &lt;chrono&gt;
+// returns elapsed time in nanoseconds
+uint64_t timeWithChrono() {
+using namespace std::chrono;
+uint64_t start = duration_cast&lt;nanoseconds&gt;
+(steady_clock::now().time_since_epoch()).count();
+// run something
+uint64_t end = duration_cast&lt;nanoseconds&gt;
+(steady_clock::now().time_since_epoch()).count();
+uint64_t delta = end - start;
+return delta;
+}</snippet>
+    <snippet group="C++" trigger="my_constructors" id="" complement="" removed="false" modified="false">$name$() = default;
+$name$($name$ &amp;) = default;
+$name$($name$ &amp;&amp;) = default;
+$name$ &amp;operator=($name$ &amp;) = default;
+$name$ &amp;operator=($name$ &amp;&amp;) = default;</snippet>
+    <snippet group="C++" trigger="my_cuda_handling_error" id="" complement="" removed="false" modified="false">#define CHECK(call)
+{
+const cudaError_t error = call;
+if (error != cudaSuccess)
+{
+printf(&quot;Error: %s:%d, &quot;, __FILE__, __LINE__);
+printf(&quot;code:%d, reason: %s\n&quot;, error, cudaGetErrorString(error));
+exit(1);
+}
+}</snippet>
+    <snippet group="C++" trigger="my_draw_coordinate" id="" complement="" removed="false" modified="false">auto $name$ = open3d::geometry::TriangleMesh::CreateCoordinateFrame(4.0, Vec3(0,0,0));</snippet>
+    <snippet group="C++" trigger="my_draw_geometry" id="" complement="" removed="false" modified="false"> open3d::visualization::DrawGeometries({$point_cloud$}, &quot;Name&quot;, 1600, 900);</snippet>
+    <snippet group="C++" trigger="my_node_point_cloud_publisher" id="" complement="" removed="false" modified="false">#include &quot;ros/ros.h&quot;
+#include &quot;sensor_msgs/PointCloud2.h&quot;
+int main(int argc, char **argv) {
+  ros::init(argc, argv, $node_name$);
+  ros::NodeHandle nh;
+  std::string point_cloud_topic = $topic$;
+  ros::Publisher pointCloudPublisher =
+      nh.advertise&lt;sensor_msgs::PointCloud2&gt;(point_cloud_topic, 1, true);
+
+  ros::Rate loop_rate(10);
+
+  while (ros::ok()) {
+    pointCloudPublisher.publish(pc);
+    ros::spinOnce();
+    loop_rate.sleep();
+  }
+
+  return 0;
+}
+</snippet>
+    <snippet group="C++" trigger="my_print_map" id="" complement="" removed="false" modified="false">std::map&lt;$type1$, $type2$&gt; m;
+
+for (const auto [key, value] : m )
+{
+    std::cout&lt;&lt; &quot;key: &quot; &lt;&lt; key &lt;&lt; &quot; value: &quot; &lt;&lt; value &lt;&lt; std::endl;
+}</snippet>
+    <snippet group="C++" trigger="my_read_img" id="" complement="" removed="false" modified="false">cv::Mat img_rgb =
+    cv::imread($path$, cv::IMREAD_COLOR);</snippet>
+    <snippet group="C++" trigger="my_subscriber_point_cloud" id="" complement="" removed="false" modified="false">#include &quot;ros/ros.h&quot;
+#include &quot;sensor_msgs/PointCloud2.h&quot;
+
+void cloud_callback (const sensor_msgs::PointCloud2ConstPtr&amp; cloud_msg){
+     ROS_INFO(&quot;inside callback&quot;);
+}
+
+int main (int argc, char** argv) {
+     ros::init (argc, argv, &quot;plane_classifier_node&quot;);
+     ros::NodeHandle nh;
+     ros::Rate loop_rate(10);
+     ros::Subscriber sub;
+     sub = nh.subscribe (&quot;input_cloud&quot;, 1, cloud_callback);
+     ros::spin();
+ }
+</snippet>
+    <snippet group="C++" trigger="ros_publisher" id="" complement="" removed="false" modified="false">ros::Publisher plane_pose = nh.advertise&lt;$msg_type$&gt;($name$,1);</snippet>
+    <snippet group="C++" trigger="transform_modify" id="" complement="" removed="false" modified="false">$transform$.matrix().block&lt;3, 1&gt;(0, 3) = $...$
+$transform$.matrix().block&lt;3, 3&gt;(0, 0) = $...$        </snippet>
+    <snippet group="C++" trigger="xml" id="" complement="" removed="false" modified="false">&lt;?xml version=&quot;1.0&quot;?&gt;</snippet>
+    <snippet group="Text" trigger="cmake" id="" complement="" removed="false" modified="false">cmake_minimum_required(VERSION 3.10)
+project ($name$)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS &quot;-Wall -Wextra -Wpedantic&quot;)
+add_executable($name$ $name$.cpp)
+</snippet>
+    <snippet group="Text" trigger="cmake_with_paths" id="" complement="" removed="false" modified="false">cmake_minimum_required(VERSION 3.10)
+project ($name$)
+
+set(RESULTS_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/results)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${RESULTS_OUTPUT_DIRECTORY}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${RESULTS_OUTPUT_DIRECTORY}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${RESULTS_OUTPUT_DIRECTORY}/bin)
+set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/install)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS &quot;-Wall -Wextra -Wpedantic&quot;)
+add_executable($name$ $name$.cpp)
+</snippet>
+    <snippet group="Text" trigger="xml" id="" complement="" removed="false" modified="false">&lt;?xml version=&quot;1.0&quot;?&gt;</snippet>
+</snippets>

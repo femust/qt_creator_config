@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorSession>
+<!-- Written by QtCreator 4.9.2, 2020-06-04T20:39:55. -->
+<qtcreator>
+ <data>
+  <variable>CascadeSetActive</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>Color</variable>
+  <value type="QString">#666666</value>
+ </data>
+ <data>
+  <variable>EditorSettings</variable>
+  <value type="QByteArray">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</value>
+ </data>
+ <data>
+  <variable>ProjectDependencies</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>ProjectList</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/visual_lidar_odometry.workspace</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>StartupProject</variable>
+  <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/visual_lidar_odometry.workspace</value>
+ </data>
+ <data>
+  <variable>value-ActiveMode</variable>
+  <value type="QString">Edit</value>
+ </data>
+ <data>
+  <variable>value-Breakpoints</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>value-ProjectTree.ExpandData</variable>
+  <valuelist type="QVariantList">
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry</value>
+    <value type="QString">visual_lidar_odometry [master]</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src/lib/visual_lidar_odometry_lib/src</value>
+    <value type="QString">src</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src</value>
+    <value type="QString">src</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src/lib/lidar_odometry_lib/src/geometry</value>
+    <value type="QString">geometry</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src/lib/lidar_odometry_lib</value>
+    <value type="QString">lidar_odometry_lib [master]</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src/lib/lidar_odometry_lib/src</value>
+    <value type="QString">src</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src/lib/visual_lidar_odometry_lib</value>
+    <value type="QString">visual_lidar_odometry_lib</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src/lib/visual_lidar_odometry_lib/include</value>
+    <value type="QString">include</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/andrzej/code_workspace/visual_lidar_odometry/src/lib</value>
+    <value type="QString">lib</value>
+   </valuelist>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-TaskWindow.Categories</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">Task.Category.QmlAnalysis</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-TaskWindow.IncludeWarnings</variable>
+  <value type="bool">true</value>
+ </data>
+ <data>
+  <variable>valueKeys</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">ActiveMode</value>
+   <value type="QString">Breakpoints</value>
+   <value type="QString">ProjectTree.ExpandData</value>
+   <value type="QString">TaskWindow.Categories</value>
+   <value type="QString">TaskWindow.IncludeWarnings</value>
+  </valuelist>
+ </data>
+</qtcreator>
