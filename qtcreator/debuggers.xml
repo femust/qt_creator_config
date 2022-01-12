@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorDebuggers>
-<!-- Written by QtCreator 4.9.2, 2021-11-22T07:51:55. -->
+<!-- Written by QtCreator 4.9.2, 2022-01-12T20:03:08. -->
 <qtcreator>
  <data>
   <variable>DebuggerItem.0</variable>
@@ -13,14 +13,30 @@
    <value type="QString" key="DisplayName">System GDB at /usr/bin/gdb</value>
    <value type="int" key="EngineType">1</value>
    <value type="QString" key="Id">{50d3f967-65aa-4595-99e5-a3cad7820105}</value>
-   <value type="QDateTime" key="LastModified">2021-04-28T10:22:22.000</value>
-   <value type="QString" key="Version">10.2.0</value>
+   <value type="QDateTime" key="LastModified">2020-08-04T12:59:30.000</value>
+   <value type="QString" key="Version">9.2.0</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.1</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-linux-generic-elf-64bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">/bin/gdb</value>
+   <value type="QString" key="DisplayName">System GDB at /bin/gdb</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">{effae310-57d2-4463-b9ff-06f73f6b45c9}</value>
+   <value type="QDateTime" key="LastModified">2020-08-04T12:59:30.000</value>
+   <value type="QString" key="Version">9.2.0</value>
    <value type="QString" key="WorkingDirectory"></value>
   </valuemap>
  </data>
  <data>
   <variable>DebuggerItem.Count</variable>
-  <value type="int">1</value>
+  <value type="int">2</value>
  </data>
  <data>
   <variable>Version</variable>
